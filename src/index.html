@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Align Kanban</title>
+  </head>
+  <body>
+    <div class="h-screen flex">
+      <div id="side-bar" class="w-64 px-8 py-4 bg-gray-100 border-r">
+        <img src="../public/images/align-logo.svg" class="h-10 w-10" alt="" />
+        <nav id="views" class="mt-8">
+          <div>
+            <h2 class="text-xs font-semibold tracking-wider uppercase">
+              issues
+            </h2>
+            <div class="mt-2 -mx-3">
+              <a
+                href="#"
+                class="flex justify-between items-center rounded bg-gray-200 px-3 py-2 text-sm font-medium text-gray-900"
+                ><span>All</span
+                ><span class="text-xs text-gray-700">36</span></a
+              >
+              <a
+                href="#"
+                class="flex justify-between items-center rounded px-3 py-2 text-sm font-medium text-gray-700"
+                ><span>Assigned</span
+                ><span class="text-xs text-gray-700">2</span></a
+              ><a
+                href="#"
+                class="flex justify-between items-center rounded px-3 py-2 text-sm font-medium text-gray-700"
+                ><span>Created by Me</span
+                ><span class="text-xs text-gray-700">1</span></a
+              ><a
+                href="#"
+                class="flex justify-between items-center rounded px-3 py-2 text-sm font-medium text-gray-700"
+                ><span>Archived</span>
+              </a>
+            </div>
+          </div>
+          <div class="mt-8">
+            <h2 class="text-xs font-semibold tracking-wider uppercase">tags</h2>
+            <div class="mt-2 -mx-3">
+              <a
+                href="#"
+                class="flex justify-between items-center rounded px-3 py-2 text-sm font-medium text-gray-900"
+                ><span>Bug</span></a
+              >
+              <a
+                href="#"
+                class="flex justify-between items-center rounded px-3 py-2 text-sm font-medium text-gray-700"
+                ><span>Feature Request</span></a
+              ><a
+                href="#"
+                class="flex justify-between items-center rounded px-3 py-2 text-sm font-medium text-gray-700"
+                ><span>Marketing</span></a
+              ><a
+                href="#"
+                class="flex justify-between items-center rounded px-3 py-2 text-sm font-medium text-gray-700"
+                ><span>v2.0</span>
+              </a>
+              <a
+                href="#"
+                class="flex justify-between items-center rounded px-3 py-2 text-sm font-medium text-gray-700"
+                ><span>Enhancement</span> </a
+              ><a
+                href="#"
+                class="flex justify-between items-center rounded px-3 py-2 text-sm font-medium text-gray-700"
+                ><span>Design</span>
+              </a>
+            </div>
+          </div>
+          <button
+            class="mt-2 flex justify-between items-center space-x-2 text-sm font-medium text-gray-600 focus:outline-none"
+          >
+            <svg
+              class="h-5 w-5 text-gray-500"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+              />
+            </svg>
+            <span>New Project</span>
+          </button>
+        </nav>
+      </div>
+      <div id="main-area" class="flex-1 min-w-0 bg-white">
+        <div id="top" class="border-b-2 border-gray-200"></div>
+        <div id="boards"></div>
+      </div>
+    </div>
+  </body>
+</html>
